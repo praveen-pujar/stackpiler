@@ -1,0 +1,64 @@
+
+.header {
+  width: 100%;
+  padding: 2%;
+  color: white;
+  text-align: center;
+}
+
+.display-board {
+  /* width: 100%; */
+ background-color: powderblue;
+  padding: 20%;
+}
+
+
+.number {
+  color: red;
+  font-size: 75px;
+  text-align: center;
+}
+
+.mrgnbtm {
+  margin-top: 20px;
+}
+
+.container{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+button {
+  margin : 10px;
+}
+
+h2{
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+h3{
+  background-color: green;
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Stack display Table */
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ td {
+  border: 3px solid blue;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+
