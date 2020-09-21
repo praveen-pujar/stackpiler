@@ -1,0 +1,23 @@
+{
+  "name": "stackpiler",
+  "version": "1.0.0",
+  "description": "example project react with nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: mp test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client "
+  },
+  "author": "Praveen Pujar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "12.16.3",
+    "npm": "6.14.8"
+  }
+}
