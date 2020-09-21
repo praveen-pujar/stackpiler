@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: mp test specified\" && exit 1",
-    "start": "node server/server.js",
-    "heroku-postbuild": " npm install --prefix client && npm run build --prefix client "
+    "start": "node server.js",
+    "heroku-postbuild": " cd client && npm instal && npm run build"
   },
   "author": "Praveen Pujar",
   "license": "ISC",
