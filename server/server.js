@@ -11,11 +11,11 @@ const path = require('path');
 
 
 app.use(express.json());
-app.use(express.static("../client/build"));
+// app.use(express.static("../client/build"));
   
-app.get('/', (req,res) => {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
-});
+// app.get('/', (req,res) => {
+//   res.sendFile(path.join(__dirname, "../client/build/index.html"));
+// });
 
 app.get('/api/users', (req, res) => {
   console.log('api/users called!!!!')
