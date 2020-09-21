@@ -33,8 +33,8 @@ class App extends Component {
       else{
         createUser(this.state.user)
         .then(response => {
-          console.log('This is createUser console');
-          console.log(response);
+          // console.log('This is createUser console');
+          // console.log(response);
           this.DisplayStack();
       });
       }
@@ -53,8 +53,8 @@ class App extends Component {
       // deleting from server
       deleteUser(ele)
       .then(response => {
-        console.log("This is deleteUser console...")
-        console.log(response);
+        // console.log("This is deleteUser console...")
+        // console.log(response);
       })  
 
   }
@@ -64,7 +64,7 @@ class App extends Component {
       alert("Please enter stack size");
     }
     else{
-      console.log("this is setStackSize console...")
+      // console.log("this is setStackSize console...")
       alert('Stack size is assigned!');
     }
    
@@ -82,8 +82,8 @@ class App extends Component {
   DisplayStack = () => {
   
       getAllUsers().then(users => {
-        console.log('Displaying stack...')
-        console.log(users)
+        // console.log('Displaying stack...')
+        // console.log(users)
         this.setState({users: users})
       });
   }

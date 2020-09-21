@@ -18,13 +18,13 @@ app.use(express.json());
 // });
 
 app.get('/api/users', (req, res) => {
-  console.log('api/users called!!!!')
+  // console.log('api/users called!!!!')
   res.json(users);
 });
 
 app.post('/api/user', (req, res) => {
   const user = req.body.user;
-    console.log('Adding user::::::::', user);
+    // console.log('Adding user::::::::', user);
     // if(users.length !== stackSize){
       users.push(user);
     // }
@@ -35,7 +35,7 @@ app.post('/api/user', (req, res) => {
 
 app.delete('/api/data', (req, res) => {
   const data = req.body.data;
-  console.log('Deleting an element......', data);
+  // console.log('Deleting an element......', data);
   users.pop(data);
   res.json("Element Deleted!");
 })
@@ -43,7 +43,7 @@ app.delete('/api/data', (req, res) => {
 
 app.post('/api/size', (req, res) => {
   const stackSize = req.body.stackSize;
-  console.log('Assigning stack size to array', stackSize);
+  // console.log('Assigning stack size to array', stackSize);
   users = new Array(Number(stackSize));
   res.json("array size added");
 });
